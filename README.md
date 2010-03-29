@@ -3,8 +3,6 @@ WindowPicker
 
 WindowPicker is a class designed to facilitate the user visually scrolling through elements. 
 
-If an image is found within the description, that becomes the screenshot of the plugin. Screenshots are optional but encouraged, given the plugin has some visual interaction. The screenshot can be of any size, but try to keep it of about 200x100.
-
 ![Screenshot](http://pat.cullen.co.za/project/WindowPicker/Screenshot200x100.png)
 
 How to use
@@ -29,8 +27,6 @@ The WindowPicker can be run in a more manual way. To do this you must leave the 
 
 Screenshots
 -----------
-
-This section is optional, but encouraged if the plugin affords it. Just a list of images, one per line. We do the resizing, so use actual size screenshots.
 
 ![Screenshot](http://pat.cullen.co.za/project/WindowPicker/Screenshot400x200.png)
 
