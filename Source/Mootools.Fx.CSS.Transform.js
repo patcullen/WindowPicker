@@ -8,7 +8,7 @@ authors:
 - Pat Cullen
 
 requires:
-- core/1.2.4
+- core/1.2.4: '*'
 
 provides: [Fx.CSS.Parsers.TransformRotate, Fx.CSS.Parsers.TransformScale, Fx.CSS.Parsers.TransformSkew]
 

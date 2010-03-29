@@ -8,7 +8,7 @@ authors:
 - Pat Cullen
 
 requires:
-- core/1.2.4
+- core/1.2.4: '*'
 - Mootools.Fx.CSS.Transform
 
 provides: [WindowPicker, WindowPicker.Transition.Line, WindowPicker.Transition.Carousel]
