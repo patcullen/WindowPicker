@@ -2,6 +2,6 @@ name: WindowPicker
 author: patcullen
 category: Interface
 tags: [animation, UI, transition, CSS3]
-#docs: http://pat.cullen.co.za/project/WindowPicker
-#demo: http://pat.cullen.co.za/project/WindowPicker/Demo
-#current: 0.1
+docs: http://pat.cullen.co.za/project/WindowPicker
+demo: http://pat.cullen.co.za/project/WindowPicker/Demo
+current: 0.1

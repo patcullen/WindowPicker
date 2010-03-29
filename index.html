@@ -20,12 +20,13 @@ body {
 	cursor: move;
 	border-bottom: 1px solid #ccc;
 	padding: 3px 0px;
-	margin: 0px;
+	margin: 0px 0px 3px;
 	text-align: center;
 }
-#pnlWhat { top: 70px; left: 40px; width: 410px; height: 180px; }
-#pnlShow { top: 100px; left: 500px; width: 260px; height: 340px; }
-#pnlWhere { top: 280px; left: 90px; width: 230px; height: 110px; }
+#pnlWhat { top: 70px; left: 40px; width: 410px; height: 190px; }
+#pnlShow { top: 10px; left: 500px; width: 260px; height: 340px; }
+#pnlWhere { top: 380px; left: 510px; width: 230px; height: 110px; }
+#pnlPic { top: 270px; left: 20px; width: 406px; height: 243px; }
 </style>
 
 <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js" language="JavaScript" type="text/javascript" ></script>
@@ -76,6 +77,11 @@ window.addEvent('domready', function() {
 		<li><a href="http://github.com/patcullen/WindowPicker">The GitHub repo</a></li>
 		<li><a href="WindowPicker.zip">Download</a></li>
 	</ul>
+</div>
+
+<div class="window" id="pnlPic">
+	<h2>Quick Pic</h2>
+	<img src="Screenshot400x200.png" width="400" height="200">
 </div>
 
 </body>
