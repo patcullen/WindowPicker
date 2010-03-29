@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Window Picker</title>
+<style>
+body { 
+	overflow: hidden;
+	font-family: Verdana;
+	font-size: 14px;
+	background-color: #fcfcfc;
+}
+.window {
+	background-color: #fff;
+	position: absolute;
+	border: 1px solid #ccc;
+	padding: 0px 10px;
+}
+.window h2 {
+	cursor: move;
+	border-bottom: 1px solid #ccc;
+	padding: 3px 0px;
+	margin: 0px;
+	text-align: center;
+}
+#pnlWhat { top: 70px; left: 40px; width: 410px; height: 180px; }
+#pnlShow { top: 100px; left: 500px; width: 260px; height: 340px; }
+#pnlWhere { top: 280px; left: 90px; width: 230px; height: 110px; }
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js" language="JavaScript" type="text/javascript" ></script>
+<script src="Source/Mootools.Fx.CSS.Transform.js" language="JavaScript" type="text/javascript" ></script>
+<script src="Source/WindowPicker.js" language="JavaScript" type="text/javascript" ></script>
+<script src="mootools-1.2.4.4-more.js" language="JavaScript" type="text/javascript" ></script>
+<script>
+window.addEvent('domready', function() {
+	$$('.window').each(function(e) {
+		new Drag(e, {handle: 'h2'});
+	});
+	new WindowPicker({
+		target: '.window',
+		transitionOptions: {
+			itemMaxWidth: 300,
+			itemMaxHeight: 250
+		}
+	});
+});
+</script>
+</head>
+<body>
+<h1>Window Picker</h1>
+
+<div class="window" id="pnlWhat">
+	<h2>What is it?</h2>
+	<p>A Mootools plugin that facilitates visually sorting through a stack of dom elements.</p>
+	<p>Please note that this idea uses (at the time of this writing) some progressive 
+	technology, and consequently only works on 'progressive' browsers. I've tested this script successfully on 
+	Firefox 3.6.2, Chrome and Opera 10.51</p>
+</div>
+
+<div class="window" id="pnlShow">
+	<h2>Show me.</h2>
+	<p>This page acts as a simple demo. While the webpage has focus, press CTRL-Left, or CTRL-Right on your 
+	keyboard. You can also visit <a href="demo/">here</a> to see another example.</p>
+	<p>Not working?
+		<ul>
+			<li>The web page must have keyboard focus, not things like the address bar. (Left click somewhere in the page)</li>
+			<li>You need a browser that supports this effect. (Do yourself a favour and make sure you're using FF, Chrome or Opera)</li>
+		</ul>
+	</p>
+</div>
+
+<div class="window" id="pnlWhere">
+	<h2>Where can I get it?</h2>
+	<ul>
+		<li><a href="http://github.com/patcullen/WindowPicker">The GitHub repo</a></li>
+		<li><a href="WindowPicker.zip">Download</a></li>
+	</ul>
+</div>
+
+</body>
+</html>
