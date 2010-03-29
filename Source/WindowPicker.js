@@ -9,10 +9,10 @@ authors:
 
 requires:
 - core/1.2.4: '*'
-- Mootools.Fx.CSS.Transform
 
 provides: [WindowPicker, WindowPicker.Transition.Line, WindowPicker.Transition.Carousel]
 
+...
 */
 
 var WindowPicker = new Class({

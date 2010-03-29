@@ -1,6 +1,6 @@
 /*
 ---
-description: Fx.CSS.Parsers.Transform*, extensions to Fx.CSS.Parsers to accomodate CSS3 Transform rules for Rotate, Scale and Skew.
+description: Fx.CSS.Parsers.Transform, extensions to Fx.CSS.Parsers to accomodate CSS3 Transform rules for Rotate, Scale and Skew.
 
 license: MIT-style
 
@@ -8,10 +8,18 @@ authors:
 - Pat Cullen
 
 requires:
-- core/1.2.4: '*'
+core/1.2.4:
+- Class/Class
+- Class/Class.Extras
+- Element/Element
+- Element/Element.Style
+- Element/Element.Dimensions
+- Utilities/Selecter
+- Fx/Fx
 
 provides: [Fx.CSS.Parsers.TransformRotate, Fx.CSS.Parsers.TransformScale, Fx.CSS.Parsers.TransformSkew]
 
+...
 */
 
 Element.Styles.MozTransform = "rotate(@deg) scale(@) skew(@deg,@deg)"; 
